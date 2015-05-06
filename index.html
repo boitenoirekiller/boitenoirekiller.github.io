@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Boite Noire Killer - Pour empêcher le profilage des individus</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <style type="text/css">
+     footer { margin: 50px 0; }
+     big { font-size:2em; }
+    </style>
+    <!-- JavaScript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row-fluid">
+            <div class="col-lg-12">
+                <h1>Boite Noire Overflow</h1>
+                <p class="lead">Webmasters: pour 1ko, inondez les boîtes noires en faisant ouvrir à vos visiteurs une url suspecte.</p>
+            </div>
+        </div>
+
+        <div class="row-fluid text-center text-big">
+        	<p><big><code>&lt;script src="//boitenoirekiller.com/js.js"&gt;&lt;/script&gt;<br />
+                &lt;a href="//boitenoirekiller.com"&gt;Je n'aime pas les boîtes noires.&lt;/a&gt;
+            </code></big></p>
+        	<p><small><em>insérez ce code juste avant la balise &lt;/body&gt;</em></small></p>
+        </div>
+
+        <h2>Explication</h2>
+        <h3>Explication pour visiteur</h3>
+        <p>Félicitations ! Vous venez de participer (malgré vous ?) à une opération de pourrissage de boîtes noires, ces boîtes censées améliorer la protection du citoyen mais permettant en réalité un flicage grandeur nature d'Internet. Vous venez d'effectuer une recherche suspecte à votre insu. Pas de crainte, vous ne risquez rien.</p>
+        <h4>Mais pourquoi ?</h4>
+        <p>Nous nous opposons à la loi sur le renseignement adoptée le 5 mai 2015 car tous les systèmes similaires dans les pays qui pratiquent la surveillance de masse sur leurs citoyens (USA, Chine, par exemple) <strong>sont inefficaces et engendrent systématiquement des dérives</strong>. Ces boîtes noires sont inutiles et extrêmement dangereuses.</p>
+        <h3>Explication pour journaliste</h3>
+        <p>Un visiteur se connecte sur un site participant à l'opération et navigue normalement. Rien ne change pour lui. Mais grâce à boitenoirekiller.com, il va automatiquement et de manière complètement transparente effectuer une requête "suspecte". D'un point de vue des boîtes noires, c'est comme s'il avait visité un site djihadiste ou fait une recherche suspecte sur Google ("comment rejoindre al qaida" ou "comment fabriquer une bombe").</p>
+        <h3>Explication pour webmaster</h3>
+        <p>En bas de page, de préférence après le chargement de la page, un script affiche une image vide, qui appelle une url distante suspecte, sur le principe des outils de tracking de statistiques (création d'une image vide invisible à partir de données javascript).</p>
+        <p>L'impact sur le temps de chargement de vos visiteurs est néglibeable. Si vous ne souhaitez pas appeler notre .js, vous pouvez aussi copier l'idée et faire la même chose hostée chez vous. Libre à vous de prévenir le visiteur ou pas, c'est selon.</p>
+        <h3>Explication pour politique</h3>
+        <p>Ta boîte noire de merde ne sert à rien, puisqu'on va la pourrir avec des millions de requêtes. Toi, ton idée de merde et ton vote honteux entrerez dans les poubelles de l'Histoire de France. Il n'est jamais rentable de ne pas écouter le peuple. Jamais.</p>
+
+        <h3>A vous de propager le message</h3>
+
+        <a class="twitter-share-button"
+               href="https://twitter.com/share"
+              data-url="http://boitenoirekiller.com"
+              data-counturl="http://boitenoirekiller.com"
+              data-count="vertical">
+        Tweet
+        </a>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=224178594398512&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>
+
+        <hr>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Contact : <a href="//twitter.com/boitenoirekill">@boitenoirekill</a>. Copyleft &copy; Boite Noire Overflow.</p>
+                    <p>Mentions légales : Directeur de la publication : un citoyen français.
+                    	<br />Adresse : VPN sans log offshore + hosting github + registrar CB anonyme prépayée + whois anonyme + IP d'un lieu public. Bisous.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+    <script src="//boitenoirekiller.com/js.js"></script>
+</body>
+
+</html>
